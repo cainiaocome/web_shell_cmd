@@ -1,2 +1,4 @@
 ip.*
 poc.*
+test.*
+__pycache__
