@@ -14,8 +14,8 @@ import threading
 import gc
 import objgraph
 from datetime import datetime
-from poc import check, compromise
 from log import log
+from poc import check, compromise
 
 i = 0
 f = open('ip.china','r')
