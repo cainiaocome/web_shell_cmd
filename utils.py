@@ -11,7 +11,7 @@ import threading
 from datetime import datetime
 from log import log
 
-#headers is used so often, i include my firefox's here
+# headers is used so often, i include my firefox's here
 headers = {'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
             'Accept-Encoding':'gzip, deflate, utf-8',
             'Accept-Language':'en-US,en;q=0.5',
@@ -21,7 +21,7 @@ headers = {'Accept':'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q
 default_username_file = '/usr/share/dict/username.txt'
 default_password_file = '/usr/share/dict/password.txt'
 
-#a simple port probe implementation
+# a simple port probe implementation
 def check_port(ip, port):
     try:
         sock = socket.socket( socket.AF_INET, socket.SOCK_STREAM )
@@ -45,7 +45,7 @@ class file_iterator(object):
         if len(next_line) == 0:
             self.f.close()
             raise StopIteration
-        #we don't need \n
+        # we don't need \n
         next_line = next_line.split('\n')[0]
         return next_line
 
